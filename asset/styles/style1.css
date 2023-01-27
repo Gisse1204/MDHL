@@ -1,12 +1,10 @@
 * {
     font-family: cursive;
-    box-sizing: border-box;
 }
 
 header {
     width: 1300px;
     height: 630px;
-    margin: 10px;
 }
 
 .imagen {
@@ -39,6 +37,7 @@ header {
     padding: 15px;
     padding-bottom: 30px;
     text-indent: 1.5em;
+    text-decoration: none;
 }
 
 header h2 {
