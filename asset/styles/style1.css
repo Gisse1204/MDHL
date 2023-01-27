@@ -1,12 +1,10 @@
 * {
     font-family: cursive;
-    box-sizing: border-box;
 }
 
 header {
     width: 1300px;
     height: 630px;
-    margin: 10px;
 }
 
 .imagen {
