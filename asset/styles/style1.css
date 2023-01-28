@@ -1,5 +1,7 @@
 * {
     font-family: cursive;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 header {
@@ -14,6 +16,7 @@ header {
 
 .nombre {
     font-size: 60px;
+    font-style: oblique;
     position: absolute;
     top: -20px;
     left: 40px;
@@ -49,7 +52,6 @@ header h2 {
 
 .subtitulo {
     font-style: oblique;
-    font-weight: bold;
 }
 
 p {
@@ -59,4 +61,14 @@ p {
 main {
     text-align: justify;
     margin-left: 300px;
+}
+
+footer{
+    position: relative;
+    width: 1300px;
+    height: 70px;
+    top: 130px;
+    text-align: center;
+    color: white;
+    background: black;
 }
