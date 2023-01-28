@@ -1,22 +1,33 @@
 * {
-    font-family: cursive;
+    font-family:'Lucida Sans';
     box-sizing: border-box;
     padding: 0;
 }
 
+body{
+    background: linear-gradient(to right, rgb(175, 175, 187),#ffffff);
+}
+
 header {
     width: 1300px;
-    height: 630px;
+    height: 600px;
+}
+
+.nombre {
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    background: transparent;
+    font-size: 60px;
+    font-style: oblique;
+    color: rgb(228, 226, 95);
+    animation:blur .75s ease-out infinite;
+    text-shadow:5px 0px 5px chocolate, 9px 0px 7px #ffffff;
 }
 
 .imagen {
     width: 1300px;
     height: 500px;
-}
-
-.nombre {
-    font-size: 50px;
-    font-style: oblique;
 }
 
 header h2 {
@@ -27,16 +38,21 @@ header h2 {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    background: transparent;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 400px;
+    left: 50px;
 }
 
 .enlace {
+    text-align: center;
     border: 1px solid #000000;
-    box-shadow: 5px 5px 5px rgb(99, 97, 97);
+    box-shadow: 5px 5px 5px chocolate;
     display:inline-block;
-    color: white;
-    background-color: rgba(12, 28, 243, 0.699);
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 226, 95);
     text-decoration: none;
     width: 100px;
     height: 25px;
@@ -45,13 +61,16 @@ header h2 {
 }
 
 .enlace:hover{
-    background-color: #63c07f;
+    transition:all .5s ease-in-out;
+    background-color: black;
+    color: white;
 }
 
 nav{
     position: absolute;
-    top: 120px;
+    top: 510px;
     right: 50px;
+    background: transparent;
 }
 
 .subtitulo {
@@ -63,17 +82,28 @@ p {
 }
 
 main {
-    margin-top: 100px;
     text-align: justify;
     margin-left: 300px;
+    margin-right: 50px;
 }
 
 footer{
-    position: relative;
-    width: 1300px;
-    height: 70px;
-    top: 130px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-decoration: none;
     text-align: center;
     color: white;
+}
+
+h4{
     background: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.redes{
+    text-decoration: none;
+    background: transparent;
+    color: white;
 }

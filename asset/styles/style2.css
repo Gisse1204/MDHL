@@ -27,6 +27,7 @@ header h2 {
 }
 
 .logo {
+    background: transparent;
     width: 200px;
     height: 200px;
 }
@@ -52,6 +53,7 @@ nav{
     position: absolute;
     top: 120px;
     right: 50px;
+    background: transparent;
 }
 
 .subtitulo {
