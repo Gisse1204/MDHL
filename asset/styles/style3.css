@@ -1,0 +1,79 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    width: 1300px;
+    height: 630px;
+}
+
+.imagen {
+    width: 1300px;
+    height: 500px;
+}
+
+.nombre {
+    font-size: 50px;
+    font-style: oblique;
+}
+
+header h2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.enlace {
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px rgb(99, 97, 97);
+    display:inline-block;
+    color: white;
+    background-color: rgba(12, 28, 243, 0.699);
+    text-decoration: none;
+    width: 100px;
+    height: 25px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.enlace:hover{
+    background-color: #63c07f;
+}
+
+nav{
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+
+.subtitulo {
+    font-style: oblique;
+}
+
+p {
+    text-indent: 1.5em;
+}
+
+main {
+    margin-top: 100px;
+    text-align: justify;
+    margin-left: 300px;
+}
+
+footer{
+    position: relative;
+    width: 1300px;
+    height: 70px;
+    top: 130px;
+    text-align: center;
+    color: white;
+    background: black;
+}
