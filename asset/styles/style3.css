@@ -111,6 +111,7 @@ main {
 }
 
 .section-flex{
+    display:block;
     min-height: 100px;
     display: flex;
     flex-direction: column;
@@ -125,22 +126,55 @@ main {
     /* font-style: oblique; */
 }
 
+.p-flex {
+    display: inline-block;
+    text-indent: 1.5em;
+    /* padding: 0 10px 10px 30px; */
+}
+
+.subtitulo-lista{
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.sub-lista{
+    margin-top: 30px;
+    text-indent: 1.5em;
+}
+
+.numeracion{
+    list-style-type: decimal;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.p-lista{
+    display: block;
+    text-indent: 1.5em;
+    list-style-type: none;
+    font-weight:normal;
+}
+
+.num2{
+    list-style-type:lower-latin;
+    font-weight:normal;
+}
+
+.simbolo{
+    padding-left: 40px;
+    list-style-type:circle;
+}
+
 /* p {
     display: block;
     text-indent: 1.5em;
     padding: 0 10px 10px 30px;
 } */
 
-.p-flex {
-    display: inline-block;
-    text-indent: 1.5em;
-    padding: 0 10px 10px 30px;
-}
-
 .contacto-flex{
     display: flex;
     flex-direction: row;
-    padding: 0 10px 10px 30px;
+    padding: 0 20px 10px 30px;
 }
 
 /* .row {
