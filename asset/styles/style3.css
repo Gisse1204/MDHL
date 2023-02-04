@@ -18,7 +18,7 @@ img{
 
 body{
     min-height: 100%;
-    background: linear-gradient(to right, rgb(175, 175, 187),#ffffff);
+    background: linear-gradient(to right, rgb(160, 160, 170),#ffffff);
 }
 
 .nombre {
@@ -34,7 +34,7 @@ body{
     font-size: 60px;
     color: rgb(228, 226, 95);
     text-shadow:5px 0px 5px chocolate, 9px 0px 7px #ffffff;
-    background: linear-gradient(rgb(241, 91, 32),rgb(241, 151, 32),rgb(228, 226, 95),rgb(150, 150, 160));
+    background: linear-gradient(rgb(5, 128, 60),rgb(86, 190, 103),rgb(204, 202, 75),rgb(150, 150, 160));
 }
 
 .imagen {
@@ -147,13 +147,13 @@ main {
 }
 
 .sub-lista{
-    margin-top: 30px;
     text-indent: 1.5em;
 }
 
 .numeracion{
     list-style-type: decimal;
     font-weight:bold;
+    margin-top: 30px;
 }
 
 .p-lista{
