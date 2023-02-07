@@ -8,10 +8,10 @@
 
 header{
     width: 100%;
-}
-
-img{
-    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
@@ -30,7 +30,6 @@ body{
     /* position: absolute; */
     /* top: 20px; */
     /* left: 200px; */
-    background: black;
     font-size: 60px;
     color: rgb(228, 226, 95);
     text-shadow:5px 0px 5px chocolate, 9px 0px 7px #ffffff;
@@ -47,8 +46,11 @@ body{
 }
 
 .barra {
+    width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 40px;
     /* text-align: center; */
     color: white;
@@ -160,9 +162,18 @@ main {
 }
 
 .adorno{
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+.adorno2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 200px;
 }
 
 .numeracion{
@@ -234,7 +245,7 @@ th{
 
 th, td{
     /* border: 1px solid black; */
-    height: 40px;
+    /* width: 100px; */
     padding: 10px;
 }
 
@@ -244,8 +255,47 @@ th, td{
 }
 
 .form{
-    border:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 
+fieldset {
+    width: 550px;
+    display: flex;    
+    /* justify-content:flex-start; */
+    /* justify-content:space-between; */
+    align-items: center;
+    padding: 2px 4px;
+}
+
+.input {
+    width: 200px;
+}
+
+.label {
+    display: flex;    
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.button{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa{
+    display: flex;
+    justify-content:center;
+}
+
+.mapa:hover{
+    width: 200%;
+    height: 400px;
+    transition:all .7s ease-in-out;
 }
 
 /* .row {
@@ -291,4 +341,8 @@ footer{
     display: inline-block;
     text-align: center;
     color: white;
+}
+
+img{
+    object-fit: cover;
 }
