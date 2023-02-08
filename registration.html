@@ -36,131 +36,114 @@
             <form action="./asset/show_data.html" method="get" class="form">
                 <fieldset>
                     <label class="label" for="first_name">First Name:</label>
-                    <input class="input" type="text" name="first_name" id="first_name">
+                    <input class="input-fname" type="text" name="first_name" id="first_name">
 
                     <label class="label" for="last_name">Last Name:</label>
-                    <input class="input" type="text" name="last_name" id="last_name">
+                    <input class="input-fname" type="text" name="last_name" id="last_name">
                 </fieldset>
                 <fieldset>
                     <label class="label" for="street">Street Address:</label>
-                    <input class="input" type="text" name="address" id="street">
+                    <input class="input-street" type="text" name="address" id="street">
                 </fieldset>
 
                 <fieldset>
                     <label class="label" for="city">City:</label>
-                    <input class="input" type="text" name="city" id="city">
+                    <input class="input-city" type="text" name="city" id="city">
 
                     <label class="label" for="zip">Zip Code:</label>
-                    <input class="input" type="number" name="zip" id="zip">
+                    <input class="input-zip" type="number" name="zip" id="zip">
                 </fieldset>
 
                 <fieldset>
-                    <label class="label" for="bdate">Birth Date:</label>
-                    <input class="input" type="date" name="birth_date" id="bdate">
+                    <label class="label" for="bdate">Birth Date (mm/dd/yyyy):</label>
+                    <input class="input-date" type="date" name="birth_date" id="bdate">
 
                     <span>Gender:</span>
                     <label class="label" for="female">Female</label>
-                    <input type="checkbox" name="gender" id="female" value="female">
+                    <input type="radio" name="gender" id="female" value="female">
 
                     <label class="label" for="male">Male</label>
-                    <input type="checkbox" name="gender" id="male" value="male">
+                    <input type="radio" name="gender" id="male" value="male">
                 </fieldset>
 
                 <fieldset>
                     <span>Grade:</span>
-                    <input type="checkbox" name="school" id="pre-school" value="pre-school">
+                    <input type="radio" name="grade" id="pre-school" value="pre-school">
                     <label class="label" for="pre-school">Pre-School</label>
 
-                    <input type="checkbox" name="school" id="1st" value="1st">
+                    <input type="radio" name="grade" id="1st" value="1st">
                     <label class="label" for="1st">1st</label>
 
-                    <input type="checkbox" name="school" id="2nd" value="2nd">
+                    <input type="radio" name="grade" id="2nd" value="2nd">
                     <label class="label" for="2nd">2nd</label>
 
-                    <input type="checkbox" name="school" id="3rd" value="3rd">
+                    <input type="radio" name="grade" id="3rd" value="3rd">
                     <label class="label" for="3rd">3rd</label>
 
-                    <input type="checkbox" name="school" id="4th" value="4th">
+                    <input type="radio" name="grade" id="4th" value="4th">
                     <label class="label" for="4th">4th</label>
 
-                    <input type="checkbox" name="school" id="5th" value="5th">
+                    <input type="radio" name="grade" id="5th" value="5th">
                     <label class="label" for="5th">5th</label>
                 </fieldset>
 
                 <h3>Which elemntary school do you live near?</h3>
-                <h4>Closest School:</h4>
-
-                <fieldset>
-                    <input type="checkbox" name="closest" id="aj" value="aj">
-                    <label class="label" for="aj">AJ Katzenmaier</label>
-
-                    <input type="checkbox" name="closest" id="marjorie" value="marjorie">
-                    <label class="label" for="marjorie">Marjorie P Hart</label>
-                </fieldset>
-
-                <fieldset>
-                    <input type="checkbox" name="closest" id="greenbay" value="greenbay">
-                    <label class="label" for="greenbay">Greenbay</label>
-
-                    <input type="checkbox" name="closest" id="north" value="north">
-                    <label class="label" for="north">North Elementary</label>
-                </fieldset>
-
-                <fieldset>
-                    <input type="checkbox" name="closest" id="howard" value="howard">
-                    <label class="label" for="howard">Howard A Yeager</label>
-
-                    <input type="checkbox" name="closest" id="south" value="south">
-                    <label class="label" for="south">South Elementary</label>
-                </fieldset>
+                <label for="closest">Closest School:</label>
+                <select multiple name="school" id="closest">
+                        <option value="aj_katzenmaier">AJ Katzenmaier</option>
+                        <option value="marjorie_p_hart">Marjorie P Hart</option>
+                        <option value="greenbay">Greenbay</option>
+                        <option value="north_elementary">North Elementary</option>
+                        <option value="howard_a_yeager">Howard A Yeager</option>
+                        <option value="south_elementary">South Elementary</option>
+                    </select>
 
                 <h3>What position(s) do you normallu play? (check all that apply)</h3>
-
                 <fieldset>
-                    <input type="checkbox" name="position" id="foward" value="foward">
-                    <label class="label" for="foward">Foward</label>
+                    <input class="input-order" type="checkbox" name="position" id="foward" value="foward">
+                    <label class="label-order" for="foward">Foward</label>
 
-                    <input type="checkbox" name="position" id="midfield" value="midfield">
-                    <label class="label" for="midfield">Midfield</label>
+                    <input class="input-order" type="checkbox" name="position" id="midfield" value="midfield">
+                    <label class="label-order" for="midfield">Midfield</label>
                 </fieldset>
 
                 <fieldset>
-                    <input type="checkbox" name="position" id="defense" value="defense">
-                    <label class="label" for="defense">Defense</label>
+                    <input class="input-order" type="checkbox" name="position" id="defense" value="defense">
+                    <label class="label-order" for="defense">Defense</label>
 
-                    <input type="checkbox" name="position" id="goalkeeper" value="goalkeeper">
-                    <label class="label" for="goalkeeper">Goalkeeper</label>
+                    <input class="input-order" type="checkbox" name="position" id="goalkeeper" value="goalkeeper">
+                    <label class="label-order" for="goalkeeper">Goalkeeper</label>
                 </fieldset>
 
                 <h3>Uniform Size:</h3>
 
                 <fieldset>
-                    <input type="checkbox" name="size" id="ysmall" value="ysmall">
-                    <label class="label" for="ysmall">Youth Small</label>
+                    <input class="input-order" type="radio" name="size" id="ysmall" value="ysmall">
+                    <label class="label-order" for="ysmall">Youth Small</label>
 
-                    <input type="checkbox" name="size" id="medium" value="medium">
-                    <label class="label" for="medium">Medium</label>
+                    <input class="input-order" type="radio" name="size" id="medium" value="medium">
+                    <label class="label-order" for="medium">Medium</label>
                 </fieldset>
 
                 <fieldset>
-                    <input type="checkbox" name="size" id="ymedium" value="ymedium">
-                    <label class="label" for="ymedium">Youth Medium</label>
+                    <input class="input-order" type="radio" name="size" id="ymedium" value="ymedium">
+                    <label class="label-order" for="ymedium">Youth Medium</label>
 
-                    <input type="checkbox" name="size" id="large" value="large">
-                    <label class="label" for="large">Large</label>
+                    <input class="input-order" type="radio" name="size" id="large" value="large">
+                    <label class="label-order" for="large">Large</label>
                 </fieldset>
 
                 <fieldset>
-                    <input type="checkbox" name="size" id="ylarge" value="ylarge">
-                    <label class="label" for="ylarge">Youth Large</label>
+                    <input class="input-order" type="radio" name="size" id="ylarge" value="ylarge">
+                    <label class="label-order" for="ylarge">Youth Large</label>
 
-                    <input type="checkbox" name="size" id="elarge" value="elarge">
-                    <label class="label" for="elarge">Extra-Large</label>
+                    <input class="input-order" type="radio" name="size" id="elarge" value="elarge">
+                    <label class="label-order" for="elarge">Extra-Large</label>
                 </fieldset>
 
                 <fieldset>
-                    <input type="checkbox" name="size" id="small" value="small">
-                    <label class="label" for="small">Small</label>
+                    <input class="input-order" type="radio" name="size" id="small" value="small">
+                    <label class="label-order" for="small">Small</label>
                 </fieldset>
 
                 <h3>Permission to Play</h3>
@@ -172,12 +155,12 @@
                     games, against any claim by or on behalf of the registrant as a result of the registrant's
                     participation in the programand/orbeing transported to or from MDHL sponsored activities,which
                     transportation.</p>
-                <p>By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
+                <p>By entering your name below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
                     acknowledge that I have read the cancellation policy and agree to its terms.</p>
 
                     <fieldset>
                         <label class="label" for="parent">Parent/GuardianSignature:</label>
-                        <input class="input" type="text" name="signature" id="parent">
+                        <input class="input-parent" type="text" name="signature" id="parent">
                     </fieldset>
 
                     <fieldset>
@@ -188,9 +171,9 @@
 
                 <input class="button" type="submit" value="Enviar">
             </form>
-            <!-- <img src="./asset/img/hockey1.jpg" class="adorno" alt="Imagen1" style="width:20%"> -->
-            <!-- <img src="./asset/img/hockey2.jpg" class="adorno" alt="Imagen2" style="width:20%"> -->
-            <img src="./asset/img/hockey3.jpg" alt="Imagen3" style="width:20%">
+            <span class="caja"><!-- <img src="./asset/img/hockey1.jpg" class="adorno" alt="Imagen1" style="width:40%"> -->
+            <!-- <img src="./asset/img/hockey2.jpg" class="adorno" alt="Imagen2" style="width:40%"> -->
+            <img src="./asset/img/hockey3.jpg"  class="adorno" alt="Imagen3" style="width:40%"></span>
         </section>
         
     </main>
